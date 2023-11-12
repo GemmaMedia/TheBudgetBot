@@ -26,7 +26,7 @@ def addExpense(amount, category):
 def printMenu(): #Function to print menu 
   print("Please choose from one of the following options...")
   print("1. Add A New Expense")
-  print("2.Remove An Expense")
+  print("2. Remove An Expense")
   print("3. List All Expenses")
 
 def listExpenses(): #This is a function to list all expenses
@@ -60,7 +60,7 @@ if __name__ == "__main__":  #Layout of code and Main function
           category = input("> ")
           break
         except:
-          print("invalid input. Please try again.") #Alerts user there is an input error
+          print("Invalid input. Please try again.") #Alerts user there is an input error
         
       addExpense(amountToAdd, category) #Adds expense to list
     elif(optionSelected == "2"):
@@ -68,4 +68,4 @@ if __name__ == "__main__":  #Layout of code and Main function
     elif(optionSelected == "3"):
      listExpenses() #Lists all expenses 
     else: 
-     print("invalid input. Please try again.")
+     print("Invalid input. Please try again.")
